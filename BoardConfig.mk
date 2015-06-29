@@ -38,6 +38,8 @@ TARGET_USERIMAGES_USE_F2FS := true
 # Recovery
 TARGET_RECOVERY_FSTAB := device/lge/f400/rootdir/etc/fstab.g3
 
+BOARD_NFC_CHIPSET := pn547
+
 # Wifi
 BOARD_WLAN_DEVICE := bcmdhd
 BOARD_HOSTAPD_DRIVER := NL80211

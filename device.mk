@@ -23,6 +23,9 @@ $(call inherit-product-if-exists, vendor/lge/f400/f400-vendor.mk)
 PRODUCT_COPY_FILES += \
     device/lge/g3-common/configs/mixer_paths_bcm.xml:system/etc/mixer_paths.xml
 
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml
+
 # GPS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf
