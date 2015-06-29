@@ -17,7 +17,7 @@
 # inherit from common g3
 -include device/lge/g3-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := g3,f400
+TARGET_OTA_ASSERT_DEVICE := g3,f400,f400k,f400s,f400l
 
 # Bluetooth
 BOARD_BLUEDROID_VENDOR_CONF := device/lge/f400/bluetooth/vnd_g3.txt
@@ -25,13 +25,14 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/f400/bluetooth
 BOARD_HAVE_BLUETOOTH_BCM := true
 
 # Kernel
-TARGET_KERNEL_CONFIG := f400_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod_f400_defconfig
+TARGET_REQUIRES_BUMP := true
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 16777216
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2692743168
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 27325360128
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2583691264
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 27426023424
 TARGET_USERIMAGES_USE_F2FS := true
 
 # Recovery
@@ -51,3 +52,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # inherit from the proprietary version
 -include vendor/lge/f320/BoardConfigVendor.mk
+-include vendor/lge/ls990/BoardConfigVendor.mk
