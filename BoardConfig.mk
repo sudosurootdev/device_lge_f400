@@ -53,5 +53,5 @@ WIFI_DRIVER_FW_PATH_STA := "/system/etc/firmware/fw_bcmdhd.bin"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # inherit from the proprietary version
--include vendor/lge/f320/BoardConfigVendor.mk
 -include vendor/lge/ls990/BoardConfigVendor.mk
+-include vendor/lge/f400/BoardConfigVendor.mk
